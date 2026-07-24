@@ -16,7 +16,7 @@ function Navbar() {
         Time<span className="text-indigo-400">Track</span>
       </h1>
       <Link to="/analytics" className="text-slate-700 hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition">Analytics</Link>
-
+     <Link to="/notes" className="text-slate-700 hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition">Notes</Link>
       <div className="flex items-center gap-4">
         <span className="text-slate-300 text-sm">
           Hi, {user?.name}
