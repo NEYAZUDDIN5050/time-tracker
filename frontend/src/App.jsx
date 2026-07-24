@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard';
 import Notes from './pages/Notes';
 import useAuthStore from './store/authStore';
 import Analytics from './pages/Analytics';
+import Settings from './pages/Settings';
 
 function ProtectedRoute({ children }) {
   const isAuthenticated = useAuthStore((state) => state.isAuthenticated);
@@ -38,6 +39,14 @@ function App() {
             </ProtectedRoute>
           }
         />
+        <Route
+    path="/settings"
+    element={
+      <ProtectedRoute>
+        <Settings />
+      </ProtectedRoute>
+    }
+/>
         <Route
     path="/analytics"
     element={

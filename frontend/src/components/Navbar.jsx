@@ -17,6 +17,7 @@ function Navbar() {
       </h1>
       <Link to="/analytics" className="text-slate-700 hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition">Analytics</Link>
      <Link to="/notes" className="text-slate-700 hover:bg-blue-800 text-white text-sm px-4 py-2 rounded-lg transition">Notes</Link>
+     <Link to="/settings" className="text-slate-300 hover:text-white text-sm">Settings</Link>
       <div className="flex items-center gap-4">
         <span className="text-slate-300 text-sm">
           Hi, {user?.name}
