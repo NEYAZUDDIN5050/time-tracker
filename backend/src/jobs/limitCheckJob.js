@@ -2,7 +2,7 @@ import cron from 'node-cron';
 import FocusSession from '../models/FocusSession.js';
 import Task from '../models/Task.js';
 import Notification from '../models/Notification.js';
-import User from '../models/User.js';
+import User from '../models/user.js';
 import { sendTelegramMessage } from '../utils/telegramService.js';
 import logger from '../config/logger.js';
 
